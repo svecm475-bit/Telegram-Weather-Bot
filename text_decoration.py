@@ -79,4 +79,4 @@ def get_time_of_day(time, lang):
             elif time_f > 21 or time_f <= 6:
                 time_of_day = "<3 Godnat 🌌, rejsende"
             return time_of_day
-    return time_of_day
+    return "Hi"
