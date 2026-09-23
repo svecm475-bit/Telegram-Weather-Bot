@@ -1,0 +1,15 @@
+
+api_keys.env
+data/api_keys.env
+.env
+
+data/user_data.json
+
+.venv/
+venv/
+ENV/
+
+__pycache__/
+*.pyc
+
+.idea/
