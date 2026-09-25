@@ -9,7 +9,7 @@ from user_data import get_user_language
 import requests
 import schedule
 
-TIME = "20:27"
+TIME = "06:00"  # Set the desired time for the notification in HH:MM format
 
 def get_latlon(city, country_code):
     api_key = get_openweather_api()
