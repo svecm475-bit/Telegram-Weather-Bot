@@ -19,15 +19,25 @@ def get_user_code_city_enabled(user_id):
            print(er)
     return None, None, None
 
-def update_user_settings(callback, city_name, country_code="-"):
+def update_user_settings(callback, city_name, country_name="-"):
     user_id = str(callback.from_user.id)
-
+    # Load country codes
+    try:
+        with open("data/country_codes.json", "r", encoding="utf-8") as file:
+            country_codes_data = json.load(file)
+    except Exception as e:
+        print(e)
+        country_codes_data = {"bla"}
+    #Load user_data
     try:
         with open(PATH, "r", encoding="utf-8") as readfile:
             data = json.load(readfile)
     except (FileNotFoundError, json.decoder.JSONDecodeError):
         print("File not found or its empty")
         data = {}
+
+    clean_country_name = country_name.strip().lower()
+    country_code = country_codes_data.get(clean_country_name, "-")
 
     if user_id not in data:
         data[user_id] = {
