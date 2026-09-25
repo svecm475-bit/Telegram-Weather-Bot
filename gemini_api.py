@@ -49,7 +49,7 @@ def ask_gemini(weather_info_string: str, lang):
                     """,
                 response_mime_type="application/json",
                 response_schema=KnightWeatherAdvice,
-                temperature=0.3,
+                temperature=0.7,
             )
         )
 
