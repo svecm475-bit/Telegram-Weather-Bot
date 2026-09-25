@@ -49,34 +49,35 @@ def get_time_of_day(time, lang):
             time_of_day = "<3 Добрый вечер 🌆, странник"
         elif time_f > 21 or time_f <= 6:
             time_of_day = "<3 Доброй ночи 🌃, странник"
-        elif lang == "uk":
-            if 12 >= time_f > 6:
-                time_of_day = "<3 Доброго ранку 🌅, мандрівнику"
-            elif 16 >= time_f > 12:
-                time_of_day = "<3 Доброго дня 🏙, мандрівнику"
-            elif 21 >= time_f > 16:
-                time_of_day = "<3 Доброго вечора 🌆, мандрівнику"
-            elif time_f > 21 or time_f <= 6:
-                time_of_day = "<3 Добраніч 🌌, мандрівнику"
-            return time_of_day
-        elif lang == "de":
-            if 12 >= time_f > 6:
-                time_of_day = "<3 Guten Morgen 🌅, Reisender"
-            elif 16 >= time_f > 12:
-                time_of_day = "<3 Guten Tag 🏙, Reisender"
-            elif 21 >= time_f > 16:
-                time_of_day = "<3 Guten Abend 🌆, Reisender"
-            elif time_f > 21 or time_f <= 6:
-                time_of_day = "<3 Gute Nacht 🌌, Reisender"
-            return time_of_day
-        elif lang == "da":
-            if 12 >= time_f > 6:
-                time_of_day = "<3 Godmorgen 🌅, rejsende"
-            elif 16 >= time_f > 12:
-                time_of_day = "<3 Goddag 🏙, rejsende"
-            elif 21 >= time_f > 16:
-                time_of_day = "<3 Godeften 🌆, rejsende"
-            elif time_f > 21 or time_f <= 6:
-                time_of_day = "<3 Godnat 🌌, rejsende"
-            return time_of_day
+        return time_of_day
+    elif lang == "uk":
+        if 12 >= time_f > 6:
+            time_of_day = "<3 Доброго ранку 🌅, мандрівнику"
+        elif 16 >= time_f > 12:
+            time_of_day = "<3 Доброго дня 🏙, мандрівнику"
+        elif 21 >= time_f > 16:
+            time_of_day = "<3 Доброго вечора 🌆, мандрівнику"
+        elif time_f > 21 or time_f <= 6:
+            time_of_day = "<3 Добраніч 🌌, мандрівнику"
+        return time_of_day
+    elif lang == "de":
+        if 12 >= time_f > 6:
+            time_of_day = "<3 Guten Morgen 🌅, Reisender"
+        elif 16 >= time_f > 12:
+            time_of_day = "<3 Guten Tag 🏙, Reisender"
+        elif 21 >= time_f > 16:
+            time_of_day = "<3 Guten Abend 🌆, Reisender"
+        elif time_f > 21 or time_f <= 6:
+            time_of_day = "<3 Gute Nacht 🌌, Reisender"
+        return time_of_day
+    elif lang == "da":
+        if 12 >= time_f > 6:
+            time_of_day = "<3 Godmorgen 🌅, rejsende"
+        elif 16 >= time_f > 12:
+            time_of_day = "<3 Goddag 🏙, rejsende"
+        elif 21 >= time_f > 16:
+            time_of_day = "<3 Godeften 🌆, rejsende"
+        elif time_f > 21 or time_f <= 6:
+            time_of_day = "<3 Godnat 🌌, rejsende"
+        return time_of_day
     return "Hi"

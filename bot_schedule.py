@@ -9,7 +9,7 @@ from user_data import get_user_language
 import requests
 import schedule
 
-TIME = "06:00"
+TIME = "20:27"
 
 def get_latlon(city, country_code):
     api_key = get_openweather_api()
