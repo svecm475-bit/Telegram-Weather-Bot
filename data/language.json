@@ -406,7 +406,25 @@
       "shower rain": "Regnbyger 🌧️",
       "heavy intensity shower rain": "Kraftige regnbyger 🌧️",
       "ragged shower rain": "Uregelmæssige regnbyger 🌧️",
-      "light snow": "Let sne"
+      "light snow": "Let sne",
+      "clear sky": "Klar himmel ☀️",
+      "few clouds": "Få skyer 🌤",
+      "scattered clouds": "Spredte skyer ⛅️",
+      "broken clouds": "Brudt skydække 🌥",
+      "overcast clouds": "Overskyet ☁️",
+      "mist": "Tåge 🌫",
+      "smoke": "Røg 🌫",
+      "haze": "Dis 🌫",
+      "sand/dust whirls": "Sand/støvhvirvler 🌪",
+      "fog": "Tæt tåge 🌫",
+      "sand": "Sand ⏳",
+      "dust": "Støv 🌪",
+      "volcanic ash": "Vulkansk aske 🌋",
+      "squalls": "Vindstød 💨",
+      "tornado": "Tornado 🌪",
+      "snow": "Sne ❄️",
+      "heavy snow": "Kraftig sne ❄️",
+      "sleet": "Slud 🌨"
     }
   }
 }
