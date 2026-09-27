@@ -62,8 +62,13 @@ def bot_message(bot):
             data = json.load(f)
     except (FileNotFoundError, json.decoder.JSONDecodeError) as er:
         print(er)
+    counter = 0
     for user, value in data.items():
         if value.get("notify"):
+            counter += 1
+            if counter == 15:
+                counter = 0
+                time.sleep(60)
             lang = get_user_language(user)
             text = get_weather_text(value.get("city_name"), value.get("country_code"))
             bot.send_message(int(user), ask_gemini(text, lang), parse_mode="HTML")

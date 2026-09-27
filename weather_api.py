@@ -58,6 +58,8 @@ def prozess_forecast_weather(bot, callback, city_name, country_code, hours):
         data_w = res.json()
         tomorrow_data = data_w["list"][hours_for_data]
         display_weather(bot, callback, tomorrow_data, city_name, time)
+    elif res.status_code == 429:
+        bot.send_message(callback.message.chat.id, "Please try again later and dont spam")
 
 def get_markup_for_weather(callback):
     user_id = callback.from_user.id
